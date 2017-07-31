@@ -20,4 +20,26 @@ def saludarAlUsuario():
     saludar(nombre)
 
 
+def pedirValor():
+    return raw_input("Ingrese un numero por favor: ")
+
+
+def preguntarNumero():
+    value = pedirValor()
+    if (not value.isdigit()):
+        preguntarNumero()
+    else:
+        return int(value)
+
+
+def calcularProducto(factor1, factor2):
+    return factor1 * factor2
+
+
+def calcularProductoParaUsuario():
+    factor1 = preguntarNumero()
+    factor2 = preguntarNumero()
+    print "El producto es " + str(calcularProducto(factor1, factor2))
+
 saludarAlUsuario()
+calcularProductoParaUsuario()
