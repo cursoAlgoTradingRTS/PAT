@@ -34,5 +34,4 @@ def tablaMultiplicar(numero):
         multiplo = x+1
         print str(multiplo) + " x " + str(numero) + " = " + str(multiplo*numero)
 
-
 tablaMultiplicar(8)
