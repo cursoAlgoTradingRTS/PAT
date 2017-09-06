@@ -4,6 +4,8 @@ a)for i in range(5):
 ... print(i * i)
 b)for i in range(2, 6):
 ... print(i, 2 ** i)
+c)for d in [3, 1, 4, 1, 5]:
+    print d,
 
 '''
 
@@ -12,3 +14,6 @@ for i in range(5):
 
 for i in range(2, 6):
     print(i, 2 ** i)
+
+for d in [3, 1, 4, 1, 5]:
+    print d,
